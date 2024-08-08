@@ -118,6 +118,13 @@
                 return
             }
             //Ещё проверки
+
+            let data = {
+                name: name,
+                email: email,
+                phone: phone
+            }
+            tg.sendData(JSON.stringify(data)) //Объект приведём к строке и передадим внутрь бота
             tg.close();
         })
     </script>
