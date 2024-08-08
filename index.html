@@ -92,12 +92,13 @@
     </form>
 
     <script src="https://telegram.org/js/telegram-web-app.js"></script> 
-    <!--подключает всякие удобные функции для нас, которые описаны в документации -->
+    <!--подключает всякие удобные функции для нас, которые описаны в документации-->
 
     <script>
-        let tg = window.Telegram.WebApp;
+        let tg = window.Telegram.WebApp; <!--позволяет использовать эти функции-->
         let buy = document.getElementById("buy")
         let order = document.getElementById("order")
+        tg.expand() <!--Расширяет экран-->
 
         buy.addEventListener("click", () => {
             document.getElementById("main").style.display = "none"
