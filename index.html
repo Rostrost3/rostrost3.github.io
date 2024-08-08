@@ -98,7 +98,7 @@
         let tg = window.Telegram.WebApp; <!--позволяет использовать эти функции-->
         let buy = document.getElementById("buy")
         let order = document.getElementById("order")
-        tg.expand() <!--Расширяет экран-->
+        tg.expand() <!--Расширяет экран(если не написать, то возможно, на телефоне отображался бы некорректно-->
 
         buy.addEventListener("click", () => {
             document.getElementById("main").style.display = "none"
