@@ -453,7 +453,7 @@ footer {
     }
     
     .meerkats h1 {
-        width: 300px;
+        width: 200px;
         font-size: 20px;
     }
     
@@ -540,7 +540,7 @@ footer {
     
     .section-4 .info-help pre {
         top: 50%;
-        transform: translate(-115px,70px);
+        transform: translate(-135px,70px);
         width: 200px;
         font-size: 8px;
     }
