@@ -120,7 +120,6 @@ nav a {
     padding-top: 100px;
 }
 
-
 .section-1 .description {
     display: flex;
     flex-direction: column;
@@ -356,8 +355,10 @@ footer {
 
 .contact-info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
+    gap: 10px;
     margin: 50px;
 }
 
@@ -451,6 +452,10 @@ footer {
         left: 0%;
     }
 
+    nav .info {
+        gap: 5px;
+    }
+    
     .meerkats h1 {
         width: 300px;
         font-size: 30px;
@@ -479,16 +484,20 @@ footer {
         right: -7px;
     }
 
+    .section-1 img {
+        width: 100%;
+    }
+
     .section-1 .description h2 {
         width: 300px;
-        height: 102px;
+        height: auto;
     }
     
     .section-1 .description p {
         width: 300px;
-        height: 138px;
+        height: auto;
         margin-top: 30px;
-        font-size: 15px;
+        font-size: 25px;
     }
     
     .section-1 .description button {
@@ -514,17 +523,17 @@ footer {
 
     .section-3 .projects h2 {
         margin-top: 50px;
-        width: 400px;
-        font-size: 40px;
+        width: 300px;
+        font-size: 30px;
     }
 
     .section-3 .projects p {
-        width: 400px;
+        width: 300px;
         font-size: 15px;
     }
 
     .section-3 .projects ul li {
-        width: 400px;
+        width: 200px;
     }
 
     .section-4 .info-help h2 {  
@@ -545,5 +554,9 @@ footer {
         padding: 5px 1px;
         width: 150px;
         font-size: 5px;
+    }
+
+    .contact-info {
+        gap: 50px;
     }
 }
