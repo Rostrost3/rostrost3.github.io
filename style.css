@@ -150,7 +150,7 @@ nav a {
 /* Статистика */
 .section-2 {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     padding-top: 100px;
     margin-left: 25px;
     gap: 25px;
@@ -163,11 +163,6 @@ nav a {
     justify-content: center;
     height: 103px;
     font-size: 30px;
-}
-
-.section-2 .text-1,
-.section-2 .text-2 {
-    margin-bottom: 100px;
 }
 
 /* 2 картинки и что компания делает */
@@ -501,11 +496,15 @@ footer {
         height: 33px;
         font-size: 15px;
     }
+
+    .section-2 {
+        grid-template-columns: 1fr;
+    }
     
     .section-2 div {
         font-size: 15px;
     }
-    
+
     .section-3 .photos {
         grid-template-columns: 1fr;
         grid-template-areas: 
