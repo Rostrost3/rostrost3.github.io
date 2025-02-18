@@ -8,10 +8,6 @@
     src: url('Kulim_Park/KulimPark-BoldItalic.ttf');
 }
 
-* {
-    font-family: "Kulim Park", "sans-serif";
-}
-
 a {
     text-decoration: none;
 }
@@ -503,6 +499,7 @@ footer {
     .section-1 .description button {
         margin-top: 60px;
         height: 33px;
+        width: 100%;
         font-size: 15px;
     }
 
@@ -543,9 +540,9 @@ footer {
     
     .section-4 .info-help pre {
         top: 50%;
-        transform: translate(-10px,70px);
-        width: 500px;
-        font-size: 10px;
+        transform: translate(-110px,70px);
+        width: 200px;
+        font-size: 8px;
     }
     
     .section-4 .info-help button {
