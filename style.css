@@ -501,7 +501,11 @@ footer {
         height: 33px;
         font-size: 15px;
     }
-
+    
+    .section-2 div {
+        font-size: 15px;
+    }
+    
     .section-3 .photos {
         grid-template-columns: 1fr;
         grid-template-areas: 
