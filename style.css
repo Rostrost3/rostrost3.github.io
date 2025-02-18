@@ -8,6 +8,10 @@
     src: url('Kulim_Park/KulimPark-BoldItalic.ttf');
 }
 
+* {
+    font-family: "Kulim Park", "sans-serif";
+}
+
 a {
     text-decoration: none;
 }
@@ -148,6 +152,8 @@ nav a {
     display: grid;
     grid-template-columns: 50% 50%;
     padding-top: 100px;
+    margin-left: 25px;
+    gap: 25px;
 }
 
 .section-2 div {
@@ -174,8 +180,8 @@ nav a {
 
 .section-3 .photos {
     display: grid;
-    grid-template-columns: 317px 317px;
-    grid-template-rows: 317px 317px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "dolphin ."
     ". giraffe";
@@ -297,6 +303,7 @@ footer {
 
 .info-all {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     border-top: 1px solid black;
     margin-right: 50px;
@@ -495,12 +502,26 @@ footer {
         font-size: 15px;
     }
 
-    .section-3 {
-        margin-left: 25px;
+    .section-3 .photos {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "dolphin"
+        "giraffe";
+    }
+
+    .section-3 .projects h2 {
+        margin-top: 50px;
+        width: 400px;
+        font-size: 40px;
+    }
+
+    .section-3 .projects p {
+        width: 400px;
+        font-size: 15px;
     }
 
     .section-3 .projects ul li {
-        width: 600px;
+        width: 400px;
     }
 
     .section-4 .info-help h2 {  
