@@ -125,7 +125,7 @@ nav a:hover {
     animation-name: slide;
     animation-duration: 5s;
     animation-delay: 7s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
 }
 
 .meerkats button::before {
