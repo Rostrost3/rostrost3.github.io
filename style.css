@@ -27,7 +27,7 @@ nav {
 
 nav .info {
     display: flex;
-    gap: 25px;
+    gap: 45px;
 }
 
 nav img {
@@ -38,7 +38,12 @@ nav img {
 }
 
 nav a {
+    transition: font-size 0.3s ease;
     color: black;
+}
+
+nav a:hover {
+    font-size: 18px;
 }
 
 .start-help {
@@ -228,8 +233,13 @@ nav a {
 
 #section-3 .projects ul li::after {
     position: absolute;
-    right: 5px;
-    content: url('Right\ Arrow.png')
+    right: 30px;
+    transition: right 0.3s ease;
+    content: url('pictures/Right\ Arrow.png')
+}
+
+#section-3 .projects ul li:hover::after {
+    right: 0;
 }
 
 #section-3 .projects ul {
@@ -322,8 +332,24 @@ footer {
 }
 
 .info-all ul li a {
+    position: relative;
     font-family: "Kulim Park", "sans-serif";
     color: black;
+}
+
+.info-all ul li a::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+    content: "";
+}
+
+.info-all ul li a:hover::after {
+    width: 100%;
 }
 
 .info-all .subscribe-news {
@@ -341,6 +367,10 @@ footer {
     border-bottom: 1px solid black;
     width: 200px;
     margin-bottom: 10px;
+}
+
+.info-all .subscribe-news input:focus {
+    outline: none;
 }
 
 .info-all .subscribe-news label[for="persData"] {
