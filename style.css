@@ -108,6 +108,7 @@ nav a:hover {
     color: #BF632F;
     animation-name: slide;
     animation-duration: 5s;
+    animation-delay: 7s;
 }
 
 .meerkats button::before {
