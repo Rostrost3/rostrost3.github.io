@@ -12,6 +12,23 @@
     from {
         left: -50px;
     }
+    to {
+        left: 50%
+    }
+}
+
+@keyframes size {
+    to {
+        font-size: 100%;
+    }
+}
+
+@keyframes switch {
+    to {
+        grid-template-areas: 
+        ". dolphin"
+        "giraffe .";
+    }
 }
 
 html {
@@ -97,7 +114,6 @@ nav a:hover {
 .meerkats button {
     position: absolute;
     bottom: 50px;
-    left: 50%;
     transform: translateX(-165px);
     width: 200px;
     height: 200px;
@@ -108,7 +124,7 @@ nav a:hover {
     color: #BF632F;
     animation-name: slide;
     animation-duration: 5s;
-    animation-delay: 7s;
+    animation-fill-mode: forwards;
 }
 
 .meerkats button::before {
@@ -184,6 +200,13 @@ nav a:hover {
     font-size: 30px;
 }
 
+#section-2 div h2 {
+    animation: size;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
 /* 2 картинки и что компания делает */
 #section-3 {
     display: flex;
@@ -200,6 +223,11 @@ nav a:hover {
     "dolphin ."
     ". giraffe";
     gap: 50px;
+    animation-name: switch;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #section-3 .photos img:first-child {
@@ -221,7 +249,6 @@ nav a:hover {
 #section-3 .projects h2 {
     font-size: 70px;
 }
-
 #section-3 .projects p {
     width: 600px;
     font-size: 20px;
@@ -445,7 +472,6 @@ footer {
         height: 130px;
     }
 }
-
 @media (max-width: 1000px) {
     .meerkats h1 {
         top: 30px;
@@ -521,7 +547,6 @@ footer {
     
     .meerkats button {
         bottom: 50px;
-        left: 50%;
         transform: translate(-30px, 30px);
         width: 50px;
         height: 50px;
@@ -571,6 +596,7 @@ footer {
         grid-template-areas: 
         "dolphin"
         "giraffe";
+        animation-name: none;
     }
 
     #section-3 .projects h2 {
