@@ -8,6 +8,12 @@
     src: url('Kulim_Park/KulimPark-BoldItalic.ttf');
 }
 
+@keyframes slide {
+    from {
+        left: -50px;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -100,6 +106,8 @@ nav a:hover {
     font-size: 22px;
     cursor: pointer;
     color: #BF632F;
+    animation-name: slide;
+    animation-duration: 5s;
 }
 
 .meerkats button::before {
