@@ -526,56 +526,56 @@ footer {
         right: -7px;
     }
 
-    .section-1 img {
+    #section-1 img {
         width: 100%;
     }
 
-    .section-1 .description h2 {
+    #section-1 .description h2 {
         width: 300px;
         height: auto;
     }
     
-    .section-1 .description p {
+    #section-1 .description p {
         width: 300px;
         height: auto;
         margin-top: 30px;
         font-size: 25px;
     }
     
-    .section-1 .description button {
+    #section-1 .description button {
         margin-top: 60px;
         height: 33px;
         width: 100%;
         font-size: 15px;
     }
 
-    .section-2 {
+    #section-2 {
         grid-template-columns: 1fr;
     }
     
-    .section-2 div {
+    #section-2 div {
         font-size: 15px;
     }
 
-    .section-3 .photos {
+    #section-3 .photos {
         grid-template-columns: 1fr;
         grid-template-areas: 
         "dolphin"
         "giraffe";
     }
 
-    .section-3 .projects h2 {
+    #section-3 .projects h2 {
         margin-top: 50px;
         width: 300px;
         font-size: 30px;
     }
 
-    .section-3 .projects p {
+    #section-3 .projects p {
         width: 300px;
         font-size: 15px;
     }
 
-    .section-3 .projects ul li {
+    #section-3 .projects ul li {
         width: 200px;
     }
 
