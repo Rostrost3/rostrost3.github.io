@@ -18,13 +18,13 @@
                 <a href="#section-3">О нас</a>
             </div>
             <img src="pictures/Логотип в Header.png" alt="Логотип">
-            <button href="#" class="start-help">Начать помогать</button>
+            <button href="#" class="start-help showForm-btn">Начать помогать</button>
         </nav>
         <div class="meerkats">
             <img src="pictures/Картинка сурков.png" alt="Сурки">
             <h1>Сохраним природу вместе</h1>
             <p>Защитим природу и животных — наше будущее зависит от нас!</p>
-            <button>Помощь</button>
+            <button class="showForm-btn">Помощь</button>
         </div>
     </header>
 
@@ -34,7 +34,7 @@
             <div class="description">
                 <h2>Наша миссия — охранять и восстанавливать природные экосистемы обеспечивая устойчивое будущее для планеты и её обитателей.</h2>
                 <p>Мы стремимся создавать и поддерживать инициативы, направленные на сохранение биоразнообразия, минимизацию экологического воздействия и повышение осведомленности общественности о важности защиты окружающей среды. Работая совместно с партнёрами и местными сообществами, мы обеспечиваем долговременное сохранение планеты и её уникальных экосистем для будущих поколений.</p>
-                <button>Начать помогать прямо сейчас</button>
+                <button class="showForm-btn">Начать помогать прямо сейчас</button>
             </div>
         </div>
         <div id="section-2">
@@ -82,8 +82,27 @@
                     реализовывать проекты по охране природы, восстанавливать экосистемы и защищать
                     животных. Благодаря вашей поддержке мы можем проводить научные исследования,
                             создавать образовательные программы и расширять наше влияние.</pre>
-                <button>Хочу начать помогать прямо сейчас</button>
+                <button class="showForm-btn">Хочу начать помогать прямо сейчас</button>
             </div>
+        </div>
+
+        <div id="form-send-div">
+            <form action="#" id="form-send">
+                <input type="text" name="userFirstName" id="userFirstName" placeholder="Имя*" required>
+    
+                <input type="text" name="userLastName" id="userLastName" placeholder="Фамилия*" required>
+    
+                <input type="email" name="userEmail" id="userEmail" placeholder="Почта*" required>
+    
+                <input type="tel" name="userPhone" id="userPhone" placeholder="Номер телефона">
+    
+                <label>
+                    Обработка персональных данных
+                    <input type="checkbox" name="isAgree" id="isAgree" required>
+                </label>
+                
+                <button type="submit">Помочь</button>
+            </form>
         </div>
     </main>
 
